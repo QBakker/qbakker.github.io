@@ -1,0 +1,250 @@
+@media screen and (min-width: 1600px;
+
+) {
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	margin: 0;
+	background-image: url("../img/bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+header {
+	margin-left: 10px;
+}
+
+#drop {
+	font-size: 25px;
+	position: relative;
+	left: 50%;
+}
+
+.dropdown {
+	position: fixed;
+	width: 70px;
+	height: 205px;
+	left: 13%;
+}
+
+.dropdownContent {
+	display: none;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: fixed;
+	border: 1px solid black;
+	float: left;
+	top: 0%;
+	left: 0%;
+	width: 14.9%;
+}
+
+.dropdown:hover .dropdownContent {
+	display: block;
+}
+
+.dropdownContent a {
+	display: block;
+	padding: 5px 10px;
+}
+
+.dropdownContent a:hover:not(.active) {
+	background-color: rgba(193,193,193,0.5);
+	color: #ffffff;
+}
+
+.active {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.dropdownOpdrachten {
+	list-style-type: none;
+}
+
+.wrapper {
+	background-color: #a1a1a1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0px 250px;
+}
+
+h1 {
+	text-align: center;
+	font-family: Luminari;
+}
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	font-family: cursive;
+	padding: 10px;
+	margin: 0px;
+}
+
+h3 {
+	font-family: cursive;
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+
+h4 {
+	margin-top: 20px;
+	font-size: 20px;
+	text-align: center;
+	font-family: cursive;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+}
+
+footer {
+	display: flex;
+	background-color:rgba(0,0,0,0.5);
+	text-align: center;
+	margin: 0px 250px;
+}
+
+footer li, footer a{
+	display: block;
+	position: relative;
+	left: 10%;
+	color: #fff;
+	text-align: left;
+	font-size: 15px;
+}
+
+footer ul {
+	margin: 0px auto;
+	padding: 10px;
+}
+
+article>ul>a {
+	display: block;
+}
+
+#profielfoto {
+	width: 45%;
+	position: relative;
+	left: 25%;
+	border: 5px double #000000;
+	margin-bottom: 20px;
+}
+
+#backHome {
+	position: fixed;
+	left: 15%;
+	width: 60px;
+	height: 60px;
+	float: left;
+	cursor: pointer;
+}
+
+#github {
+	left: 70%;
+}
+
+#facebook {
+	left: 75%;
+}
+
+#mail {
+	left: 80%;
+}
+
+#merwelanden {
+	width: 100%;
+	height: 100%;
+	float: left;
+	border: 5px double #000000;
+	margin: 0px 100px 20px 100px;
+}
+
+#driehoek {
+	margin-top: 45px;
+}
+
+.title {
+	text-align: center;
+	margin: 25px 500px;
+	font-size: 30px;
+}
+
+.block {
+	width: 400px;
+	height: 350px;
+	margin-bottom: 20px;
+	padding: 20px;
+	border: 5px double #000000;
+}
+
+.miniBlock {
+	display: inline-flex;
+	width: 45%;
+	height: 60%;
+	margin: 35px 15px 15px 0px;
+	border: 5px double #000000;
+}
+
+.bigblock {
+	width: 800px;
+	margin-bottom: 20px;
+	padding: 20px;
+	border: 5px double #000000;
+	text-align: center;
+}
+
+.image50{
+	position: relative;
+	left: 25%;
+	width: 50%;
+
+}
+
+.image100 {
+	width: 100%;
+}
+
+.grid {
+	width: 90%;
+	height: 40%;
+	padding-bottom: 5px;
+	margin: 0px 15px;
+
+}
+
+.cursive {
+	font-family: cursive;
+	font-size: 18px;
+	display: block;
+}
+
+.link {
+	color: #004fff;
+}
+
+.text {
+	margin: 0 200px;
+}
+
+.buttons {
+	position: absolute;
+	font-size: 50px;
+}
+
+.buttons:hover {
+	color: #004fff;
+}
