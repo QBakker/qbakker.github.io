@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quinten Opdracht12</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<a onclick="window.history.back()"> 
+				<img src="img/back_button.png" id="back" alt="img not readable"></a>
+		<canvas id="canvas" width="800" height="600"></canvas>
+		<script src="js/robot-arm.js"></script>
+		<script>
+			var canvas = document.getElementById("canvas");
+			var robotArm = new RobotArm(canvas);
+			var color = robotArm.scan();
+			var grab = 0;
+			var right = 0;
+			var left = 0;
+
+			robotArm.randomLevel(1, 8);
+			robotArm.speed = 1000;
+
+			for (grab; grab < 10; grab++) {
+				robotArm.grab();
+				color = robotArm.scan();
+				console.log(color);
+				if (color === null) {
+					break;
+				}
+				else {
+					for (right; right < grab; right++) {
+						robotArm.moveRight();
+						}
+						robotArm.drop();
+						for (left; left < (grab); left++) {
+							robotArm.moveLeft();
+							} 
+					right = 0
+					left = 0
+					}
+				}
+			robotArm.run();
+		</script>
+		<img src="img/exercise12.png" alt="Oefening12" title="Oefening12" class="image">
+	</body>
+</html>
+
+

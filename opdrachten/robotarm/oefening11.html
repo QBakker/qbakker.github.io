@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quinten Opdracht11</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<a onclick="window.history.back()"> 
+				<img src="img/back_button.png" id="back" alt="img not readable"></a>
+		<canvas id="canvas" width="800" height="600"></canvas>
+		<script src="js/robot-arm.js"></script>
+		<script>
+			var canvas = document.getElementById("canvas");
+			var robotArm = new RobotArm(canvas);
+			var color = robotArm.scan();
+			var grab = 9;
+			var right = 0;
+			var left = 0;
+
+			robotArm.loadLevel("exercise 12");
+			robotArm.speed = 2000;
+
+			for (grab; grab > 0; grab--) {
+				robotArm.grab();
+				color = robotArm.scan();
+				console.log(color);
+				if (color === "red") {
+					for (right; right < grab; right++) {
+						robotArm.moveRight();
+					}
+					robotArm.drop();
+					for (left; left < (grab-1); left++) {
+						robotArm.moveLeft();
+					}
+				} 
+				else {
+					robotArm.drop();
+					robotArm.moveRight();
+				}
+				right = 0
+				left = 0
+			}
+			robotArm.run();
+		</script>
+		<img src="img/exercise11.png" alt="Oefening11" title="Oefening11" class="image">
+	</body>
+</html>
+
+

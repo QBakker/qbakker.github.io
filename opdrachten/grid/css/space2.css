@@ -1,0 +1,68 @@
+body {
+	background-image: url(../img/bg.png);
+	font-family: Tahoma;
+	margin: 0px 450px;
+}
+
+
+#frame {
+	background-color: rgba(255,200,200,0.3);
+	padding: 10px;
+}
+
+header nav ul {
+	list-style-type: none;
+	background-color: rgba(255,255,200,0.3);
+	padding: 11px 0px;	
+}
+
+header h1 {
+	text-align: center;
+	margin: 26px 0px;
+}
+
+nav li {
+	display: inline;
+}
+
+nav li a {
+	text-decoration: none;
+	padding:0px 10px;
+	color: black;
+	font-weight: bold;
+}
+
+main {
+	border: 1px black solid;
+	background-color: rgba(200,200,255,0.3);
+	width: 100%;
+	display: flex;
+}
+
+section {
+	border: 1px solid black;
+	padding: 10px;
+	width: 75%;
+}
+
+article {
+	background-color: rgba(200,200,200,0.6);
+}
+
+article p {
+	padding: 10px 0px;
+}
+aside {
+	border: 1px black solid;
+	background-color: rgba(200,255,200,0.3);
+	width: 25%;
+	padding: 10px;
+}
+
+
+footer {
+	background-color: rgba(255,255,200,0.3);
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 10px;
+}

@@ -1,0 +1,135 @@
+body {
+    background-image: url("../img/ingredienten-background.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+    text-align: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin: 0 300px;
+    width: 800px;
+    font-size: 20px;
+}
+
+h1, ol {
+    color: white;
+    text-align: center;
+}
+
+h4  {
+    color: rgb(209,3,3);
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: black;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+}
+
+th, td  {
+    color: black;
+}
+
+#sidebar {
+    text-align: left;
+    list-style-type: none;
+    float: left;
+    padding: 5px;
+    width: 10%;
+    height: 40%;
+    overflow: scroll;
+}
+
+#info {
+    background-color: white;
+    border: 5px double;
+    color: black;
+    font-size: 30px;
+    height: 150px;
+    opacity: 0.5;
+    text-align: justify;
+    list-style-type: none;
+    width: 350px;
+    float: right;
+}
+
+#title-club {
+    width: 1200px;
+    margin: 50px 100px;
+}
+
+#sandwich {
+    width: 900px;
+    height: 600px;
+    border: 5px double;
+    margin: 0 auto;
+}
+
+#ingredientlist {
+    background-color:white;
+    opacity: 0.7;
+    text-align: justify;
+    font-size: 25px;
+    width: 340px;
+    height: 310px;
+    text-align: justify;
+    list-style-type: none;
+    border: 5px double;
+    border-color: black;
+    background
+    padding: 30px;
+    margin: 0 auto;
+}
+
+#ingredientlist  li {
+    margin-bottom: 10px;
+}
+
+#stap-voor-stap {
+    background-color: white;
+    text-align: justify;
+    color: black;
+    font-size: 25px;
+    width: 800px;
+    height: auto;
+    margin: auto;
+    padding: 35px;
+    border: 5px double;
+    opacity: 0.7;
+}
+
+#stap-voor-stap li {
+    margin-bottom: 25px;
+}
+
+#waarden {
+    margin: 0 auto;
+    font-size: 25px;
+    width: 30%;
+    opacity: 0.7;
+    text-shadow: 1px 1px red;
+    padding: 10px;
+    background-color: white;
+    border: 5px double;
+}
+
+#waarden td, th {
+    margin-bottom: 50px;
+}
+
+
+

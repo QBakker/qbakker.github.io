@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quinten Opdracht4</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<a onclick="window.history.back()"> 
+				<img src="img/back_button.png" id="back" alt="img not readable"></a>
+		<canvas id="canvas" width="800" height="600"></canvas>
+		<script src="js/robot-arm.js"></script>
+		<script>
+			var canvas = document.getElementById("canvas");
+			var robotArm = new RobotArm(canvas);
+
+			robotArm.loadLevel("exercise 4");
+			robotArm.speed = 1000;
+
+			for (var a = 1; a <= 2; a++) {
+				robotArm.grab();
+				robotArm.moveRight();
+				robotArm.moveRight();
+				robotArm.drop();
+				robotArm.moveLeft();
+				robotArm.moveLeft();
+				}	
+			robotArm.grab();
+			robotArm.moveRight();
+			robotArm.drop();
+			robotArm.moveRight();
+			robotArm.grab();
+			robotArm.moveLeft();
+			robotArm.drop();
+			robotArm.moveRight();
+			robotArm.grab();
+			robotArm.moveLeft();
+			robotArm.drop();
+
+
+			robotArm.run();
+		</script>
+		<img src="img/exercise4.png" alt="Oefening4" title="Oefening4" class="image">
+	</body>
+</html>

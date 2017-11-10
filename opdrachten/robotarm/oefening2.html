@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quinten Opdracht2</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<a onclick="window.history.back()"> 
+				<img src="img/back_button.png" id="back" alt="img not readable"></a>
+		<canvas id="canvas" width="800" height="600"></canvas>
+		<script src="js/robot-arm.js"></script>
+		<script>
+			var canvas = document.getElementById("canvas");
+			var robotArm = new RobotArm(canvas);
+
+			robotArm.loadLevel("exercise 2");
+			robotArm.speed = 1000;
+
+			robotArm.grab();
+			robotArm.moveRight();
+			robotArm.moveRight();
+			robotArm.moveRight();
+			robotArm.moveRight();
+			robotArm.moveRight();
+			robotArm.moveRight();
+			robotArm.moveRight();
+			robotArm.moveRight();
+			robotArm.moveRight();
+			robotArm.drop();
+			robotArm.moveLeft();
+			robotArm.moveLeft();
+			robotArm.grab();
+			robotArm.moveRight();
+			robotArm.moveRight();
+			robotArm.drop();
+			robotArm.moveLeft();
+			robotArm.moveLeft();
+			robotArm.moveLeft();
+			robotArm.moveLeft();
+			robotArm.moveLeft();
+			robotArm.grab();
+			robotArm.moveRight();
+			robotArm.moveRight();
+			robotArm.moveRight();
+			robotArm.moveRight();
+			robotArm.moveRight();
+			robotArm.drop();
+
+			robotArm.run();
+		</script>
+		<img src="img/exercise2.png" alt="Oefening2" title="Oefening2" class="image">
+	</body>
+</html>

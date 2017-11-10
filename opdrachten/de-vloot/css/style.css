@@ -1,0 +1,87 @@
+body {
+	background-image: url("grfx/bg.png");
+	background-repeat: repeat-x;
+	margin: 0px auto;
+}
+
+header {
+	background-image: url("grfx/header.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 238px;
+	width: 800px;
+	margin: 0px auto;
+	padding: 15px;
+}
+
+main {
+	width: 770px;
+	padding: 15px;
+	background: white;
+	margin: 0 auto;
+}
+
+.title {
+	margin: 0px 20px;
+}
+
+#menu {
+	list-style-type: none;
+	margin: 150px 0px;
+}
+
+.text {
+	
+	text-align: left;
+	font-size: 18px;
+}
+
+.top_left {
+	float: left;
+	margin: 0px 20px 20px 0px;
+}
+
+.top_right {
+	float: right;
+	margin: 0px 0px 20px 20px;
+}
+
+.mid_right {
+	float: right;
+	margin: 20px 0px 0px 20px;
+}
+
+.bot_left {
+	float: left;
+	margin: 20px 20px 0px 0px;
+}	
+
+.bot_right {
+	float: right;
+	margin: 20px 0px 0px 20px;
+}
+
+ul li {
+	display: inline-block;
+}
+
+li a {
+	list-style-type: none;
+	text-decoration: none;
+	color: white;
+	margin-right: 15px;
+}
+
+li a.active {
+	color: lightblue;
+}
+
+li a:hover:not(.active) {
+	color: black;
+}
+
+h2 {
+	font-size: 30px;
+	margin: 0 auto;
+}
+

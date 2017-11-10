@@ -1,0 +1,80 @@
+body	{
+		background-image: url("../IMG/Background.jpg");
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+		text-align: center;
+		}
+
+nav a 	{
+		color: Navy;
+		margin-right: 10px;
+		border: 5px double;
+		padding: 10px;
+		}
+
+a:hover {
+		color: blue;
+		background-color: grey;
+		}
+
+h1 		{
+		color: Navy;
+		margin-top: 50px;
+		}
+
+ul 		{
+		list-style-type: none;
+		}
+
+p 		{
+		text-align: left;
+		margin-left: 400px;
+		margin-right: 400px;
+		border: 5px double;
+		padding: 10px;
+		}
+
+#Cars					{
+						width: 	950px;
+						height:	550px;
+						border: 5px double;
+						padding: 2,5px;
+						margin: 20px;
+						opacity: 100%;
+						}
+
+#Algemene-Informatie	{
+						width:	600px;
+						height: 600px;
+						position: fixed;
+						left: 0px;
+						top: -100px;
+						}
+
+
+#Hobbies				{
+						width:	600px;
+						height: 600px;
+						position: fixed;
+						left: 0px;
+						top: -100px;
+						}	
+
+	#Celica				{
+						width: 	850px;
+						height:	500px;
+						border: 5px double;
+						padding: 2,5px;
+						margin-left: 5px;
+						}
+
+#Diploma				{
+						width:	600px;
+						height: 600px;
+						position: fixed;
+						left: 0px;
+						top: -100px;
+						}
+
