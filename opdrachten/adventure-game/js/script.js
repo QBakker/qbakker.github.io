@@ -25,22 +25,6 @@ var tool7 = document.getElementById('tool7');
 var tool8 = document.getElementById('tool8');
 
 
-var tools = [];
-for(var i = 1; i <= 8; i++){
-	tools.push(document.getElementById('tool' + i));
-}
-console.log(tools);
-
-function toolShift(){
-	for(var i = 0; i < 8; i++){
-		console.log(tools[i].src);
-		if(tools[i].src == ""){
-			if(i < tools.length - 2){
-				tools[i].src = tools[i + 1].src;
-			}
-		}
-	}
-}
 
 
 var inventory = document.getElementById('inventory');
@@ -54,6 +38,23 @@ start.setAttribute('onclick','startGame()');
 image.src = 'img/black.jpg';
 
 window.onload = function() 
+
+// var tools = [];
+// for(var i = 1; i <= 8; i++){
+// 	tools.push(document.getElementById('tool' + i));
+// }
+// console.log(tools);
+
+// function toolShift(){
+// 	for(var i = 0; i < 8; i++){
+// 		console.log(tools[i].src);
+// 		if(tools[i].src == ""){
+// 			if(i < tools.length - 2){
+// 				tools[i].src = tools[i + 1].src;
+// 			}
+// 		}
+// 	}
+// }
 {
 	localStorage.clear();
 }
@@ -76,7 +77,9 @@ function startGame()
 
 function clear() 
 {
-	items.src = '';
+	item1.src = '';
+	item2.src = '';
+	item3.src = '';
 	options.src = '';
 	
 	again.style.display = 'none';

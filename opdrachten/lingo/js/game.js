@@ -11,6 +11,17 @@ checkBtn.setAttribute('onclick', 'check()');
 
 function check()
 {
-	var input = document.getElementById('letter_0');
-	console.log(input.value);
+	for(var i = 0; i <=4; i++){
+		
+		var input = document.getElementById('letter_' + i);
+		
+		console.log(input.value);
+
+		if(input.value === answerArray[i]) {
+			input.style.backgroundColor = 'red';
+		} else if(input.value === answerArray[1,2,3,4]) {
+			input.style.backgroundColor = 'yellow';
+		}
+	}
 }
+
