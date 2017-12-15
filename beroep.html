@@ -5,13 +5,12 @@
 		<meta charset="utf-8">
 		<link rel="icon" type="image/x-icon" href="img/icon.png">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<header>
 			<div class="dropdown"> 
-				<i id="drop" class="fa fa-bars" aria-hidden="true"></i>
+				<img id="drop" src="img/bars.png">
 				<nav class="dropdownContent">
 					<a href="index.html">Home</a>
 					<a href="opdrachten.html">Opdrachten</a>
@@ -46,7 +45,12 @@
 						<li>Perfectionist</li>
 					</ul>
 				</article>
-				<img id="merwelanden" src="img/merwelanden.jpg" alt="Merwelanden" title="Merwelanden">
+				<article class="slideshow">
+			 		<img class="slides image100" src="img/merwelanden1.jpg">
+			  		<img class="slides image100" src="img/merwelanden2.jpg">
+			  		<button class="left" onclick="move(-1)">&#10095;</button>
+			  		<button class="right" onclick="move(1)">&#10094;</button>
+				</article>
 				<article class="bigblock">
 					<h2>ICT ervaring</h2>
 					<ul>
@@ -83,5 +87,6 @@
 					<i class="fa fa-envelope-o" aria-hidden="true"></i></a>
 			</ul>
 		</footer>
+		<script src="js/script.js"></script>
 	</body>
 </html>
