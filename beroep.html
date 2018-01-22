@@ -6,19 +6,19 @@
 		<link rel="icon" type="image/x-icon" href="img/icon.png">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 	</head>
 	<body>
 		<header>
-			<div class="dropdown"> 
-				<img id="drop" src="img/bars.png">
-				<nav class="dropdownContent">
-					<a href="index.html">Home</a>
-					<a href="opdrachten.html">Opdrachten</a>
-					<a href="opleidingen.html">Opleidingen</a>
-					<a href="beroep.html" class="active">Beroep</a>
-					<a href="overmij.html">Over mij</a>
-				</nav>
-			</div>
+			<nav class="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="opdrachten.html">Opdrachten</a></li>
+					<li><a href="opleidingen.html">Opleidingen</a></li>
+					<li class="active"><a href="beroep.html">Beroep</a></li>
+					<li><a href="overmij.html">Over mij</a></li>
+				</ul>
+			</nav>
 		</header> 
 		<main>
 			<section class="wrapper">
@@ -63,7 +63,7 @@
 		</main>
 		<footer>
 			<ul>
-				<strong><li>Opdrachten:</li></strong>
+				<li>Opdrachten:</li>
 				<a target="_BLANK" href="opdrachten/wie-ben-ik/index.html">Wie ben ik</a>
 				<a target="_BLANK" href="opdrachten/recepten/index.html">Recepten</a>
 				<a target="_BLANK" href="opdrachten/de-vloot/index.html">De vloot</a>
@@ -71,20 +71,29 @@
 				<a href="grid.html">Grid</a>
 				<a target="_BLANK" href="opdrachten/handy/absolutely.html">Handy</a>
 				<a href="robotarm.html">Robotarm</a>
+				<a target="_BLANK" href="opdrachten/adventure-game/index.html">Adventure Game</a>
+				<a target="_BLANK" href="opdrachten/mastermind/index.html">Mastermind</a>
+				<a target="_BLANK" href="opdrachten/lingo/index.html">Lingo</a>
 			</ul>
 			<ul>
-				<strong><li>Contact:</li></strong>
+				<li>Contact:</li>
 				<li>Land: Nederland</li>
 				<li>Plaats: Dordrecht</li>
-				<a href="mailto:quinten_bakker@live.nl"> Mail: quinten_bakker@live.nl</a>
-			</ul>
-			<ul>
-			<a id="github" class="buttons" target="_BLANK" href="https://github.com/QBakker">
-					<i class="fa fa-github" aria-hidden="true"></i></a>
-			<a id="linkedIn" class="buttons" target="_BLANK" href="https://www.linkedin.com/in/quinten-bakker-b5939a90/">
-					<i class="fa fa-linkedin" aria-hidden="true"></i>
-			<a id="mail" class="buttons" href="mailto:quinten_bakker@live.nl">
-					<i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+				<li class="links">
+					<a href="mailto:quinten_bakker@live.nl">
+						<i class="fas fa-envelope links"></i>
+					</a>
+				</li>
+				<li class="links">
+					<a target="_BLANK" href="https://github.com/QBakker">
+						<i class="fab fa-github links"></i>
+					</a>
+				</li>
+				<li class="links">
+					<a target="_BLANK" href="https://www.linkedin.com/in/quinten-bakker-b5939a90">
+						<i class="fab fa-linkedin links"></i>		
+					</a>
+				</li>
 			</ul>
 		</footer>
 		<script src="js/script.js"></script>

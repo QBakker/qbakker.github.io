@@ -60,7 +60,6 @@ footer {
 footer li, footer a{
 	display: block;
 	position: relative;
-	left: 10%;
 	color: #fff;
 	text-align: left;
 	font-size: 15px;
@@ -75,53 +74,33 @@ article>ul>a {
 	display: block;
 }
 
-#drop {
-	font-size: 25px;
-	position: absolute;
-	left: 50%;
-	width: 25px;
-}
-
-.dropdown {
-	position: fixed;
-	width: 70px;
-	height: 205px;
-	left: 13%;
-}
-
-.dropdownContent {
-	display: none;
-	background-color: rgba(255, 255, 255, 0.5);
-	position: fixed;
-	border: 1px solid black;
-	float: left;
-	top: 0%;
-	left: 0%;
-	width: 14.9%;
-}
-
-.dropdown:hover .dropdownContent {
-	display: block;
-}
-
-.dropdownContent a {
-	display: block;
-	padding: 5px 10px;
-}
-
-.dropdownContent a:hover:not(.active) {
-	background-color: rgba(193,193,193,0.5);
-	color: #ffffff;
-}
-
-.active {
-	background-color: #000000;
-	color: #ffffff;
+nav li {
+	padding: 0px 20px;
 }
 
 a {
 	text-decoration: none;
 	color: #000000;
+}
+
+.active, .active>a {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.navigation {
+	display: block;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-right: 2.5px solid black;
+	position: fixed;
+	width: 250px;
+	left: 0px;
+	top: 0px;
+}
+
+.navigation li:hover:not(.active) {
+	background-color: rgba(193,193,193,0.5);
+	color: #ffffff;
 }
 
 .dropdownOpdrachten {
@@ -131,6 +110,7 @@ a {
 .wrapper {
 	background-color: #a1a1a1;
 	display: flex;
+	position: relative;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	margin: 0px 250px;
@@ -250,6 +230,17 @@ a {
 	width: 100%;
 }
 
+.imgGrid {
+	width: 100%;
+}
+
+#back {
+	position: absolute;
+	left: 0px;
+	width: 50px;
+	height: 50px;
+}
+
 .grid {
 	width: 90%;
 	height: 40%;
@@ -266,6 +257,12 @@ a {
 
 .link {
 	color: #004fff;
+}
+
+.links {
+	display: inline-block;
+	font-size: 50px;
+	margin:0px 5px;
 }
 
 .text {

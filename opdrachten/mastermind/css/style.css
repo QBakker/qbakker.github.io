@@ -1,8 +1,47 @@
-.bullet{
-	width: 25px;
-	height: 25px;
-	margin: 10px 5px;
-	border-radius: 50px;
-	display: inline-block;
-	border: 2px solid #000000;
+body{
+	margin: 0px auto;
+	background-image: url('../img/background2.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+article{
+	margin: 0px 10px;
+}
+
+section{
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+}
+
+h1 {
+	margin-top: 50px;
+	margin-bottom: 0px;
+	text-align: center;
+	color: #fff;
+}
+#screen button, #menu button, #pins button{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+}
+#check, #screen, #menu, #pins {
+	margin-top: 25px;
+	border: 5px double #1d2c4b;
+	background-color: rgba(255,255,255,0.35);
+}
+
+#screen {
+	width: 200px;
+}
+
+#menu {
+	width: 150px;
+	height: 185px;
+}
+
+#pins {
+	width: 100px;
 }

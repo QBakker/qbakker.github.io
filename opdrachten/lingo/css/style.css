@@ -1,3 +1,21 @@
 input {
-	width: 10px;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+button {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+article {
+	position: relative;
+	width: 350px;
+	height: 450px;
+	top: 20px;
+	left: 650px;
+	border: 5px double #000;
 }

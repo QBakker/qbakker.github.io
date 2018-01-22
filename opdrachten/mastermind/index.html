@@ -3,12 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Mastermind</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/game.js"></script>
 </head>
-<body>
-	
-	<div id="game"></div>
-
-	<script type="text/javascript" src="js/game.js"></script>
+<body onload="start()">
+	<main>
+		<h1>Mastermind</h1>
+		<section>
+			<article id="menu"></article>
+			<article id="screen"></article>
+			<article id="pins"></article>
+		</section>
+	</main>
 </body>
 </html>

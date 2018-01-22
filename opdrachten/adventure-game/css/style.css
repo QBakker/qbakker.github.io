@@ -46,14 +46,20 @@ li {
 #start {
     display: block;
     position: absolute;
-    left: 540px;
-    top: 300px;
-    color: #ffee6e;
-    padding: 10px;
+    left: 450px;
+    top: 500px;
     cursor: pointer;
-    text-shadow: 4px 4px 0px #000, 7px 7px 0px rgba(0, 0, 0, 0.2);
-    font-size: 2em;
-    font-family: sans-serif;
+    -webkit-animation: shift 7s;
+    animation: shift 4s;
+    animation: appear 3s;
+}
+
+#story {
+    display: block;
+    position: absolute;
+    left: 520px;
+    top: 200px;
+    cursor: pointer;
     -webkit-animation: shift 6s;
     animation: shift 4s;
     animation: appear 2s;
@@ -62,41 +68,53 @@ li {
 #gameOver {
 	display: none;
 	position: absolute;
-	top: 180px;
-	left: 87px;
-	-webkit-animation: shift 4s;
+	top: 50px;
+	left: 200px;
+	-webkit-animation: shift 6s;
 	animation: shift 4s;
 	animation: appear 2s;
 }
 
-#again {
+#tryAgain {
     display: none;
     position: absolute;
-    left: 650px;
-    top: 520px;
-    color: #f00;
-    padding: 10px;
-    cursor: pointer;
-    text-shadow: 2px 2px 0px #fff, 7px 7px 0px rgba(0, 0, 0, 0.2);
-    font-size: 2.8em;
-    font-family: sans-serif;
+    left: 510px;
+    top: 330px;
     -webkit-animation: shift 6s;
     animation: shift 6s;
-    text-align: center;
-    text-transform: uppercase;
     animation: appear 6s;
-    z-index: 0;
+    z-index: -1;
 }
 
 #gameOverSituation {
 	display: none;
 	position: absolute;
-	top: 396px;
-	left: 87px;
+	top: 525px;
+	left: 250px;
 	-webkit-animation: shift 5s;
 	animation: shift 5s;
 	animation: appear 4s;
 }
+
+#wellDone {
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 250px;
+	-webkit-animation: shift 6s;
+	animation: shift 4s;
+	animation: appear 2s;
+}
+#youWon {
+	display: none;
+	position: absolute;
+	top: 500px;
+	left: 300px;
+	-webkit-animation: shift 5s;
+	animation: shift 5s;
+	animation: appear 4s;
+}
+
 
 #text {
 	display: none;
