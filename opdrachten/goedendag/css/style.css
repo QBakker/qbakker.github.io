@@ -1,0 +1,46 @@
+*{
+    font-family: 'Lobster', cursive;
+    font-size: 100px;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 4px 4px #000;
+}
+
+head{
+    display: none;
+}
+
+.morning{
+    background-image: url("../img/morning.png");
+}
+
+.afternoon{
+    background-image: url("../img/afternoon.png");
+}
+
+.evening{
+    background-image: url("../img/evening.png");
+}
+
+.night{
+    background-image: url("../img/night.png");
+}
+article{
+    display: block;
+    height: 200px;
+}
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px auto;
+    color: #fff;
+}
+
+p{
+  margin-left: -20px;
+}
+
+#first{
+  margin-top: 210px;
+}
