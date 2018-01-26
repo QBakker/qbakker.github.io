@@ -1,36 +1,20 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Robotarm</title>
-		<meta charset="utf-8">
-		<link rel="icon" type="image/x-icon" href="img/icon.png">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-	</head>
+<title>Robotarm</title>
+<?php
+	include 'head.php';
+	include 'header.php';
+ ?>
 	<body>
-		<header>
-			<nav class="navigation">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="opdrachten.html">Opdrachten</a></li>
-					<li><a href="opleidingen.html">Opleidingen</a></li>
-					<li><a href="beroep.html">Beroep</a></li>
-					<li><a href="overmij.html">Over mij</a></li>
-				</ul>
-			</nav>
-		</header>
 		<main>
 			<section class="wrapper">
-				
-				<a id="back" onclick="window.history.back()"> 
+
+				<a id="back" onclick="window.history.back()">
 					<img src="img/back_button.png" id="back" alt="img not readable"></a>
 
-				<article class="block"> 
+				<article class="block">
 					<a href="opdrachten/robotarm/oefening1.html">
 						<img class="imgRobotarm" src="opdrachten/robotarm/img/exercise1.png" alt="exercise1" title="exercise1">
 						<h1>Oefening 1</h1>
-					</a>	
+					</a>
 				</article>
 				<article class="block">
 					<a href="opdrachten/robotarm/oefening2.html">
@@ -130,10 +114,12 @@
 				</li>
 				<li class="links">
 					<a target="_BLANK" href="https://www.linkedin.com/in/quinten-bakker-b5939a90">
-						<i class="fab fa-linkedin links"></i>		
+						<i class="fab fa-linkedin links"></i>
 					</a>
 				</li>
 			</ul>
 		</footer>
 	</body>
-</html>
+	<?php
+		include 'footer.php';
+	 ?>
